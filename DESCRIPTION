@@ -1,0 +1,16 @@
+Package: JCFtheme
+Type: Package
+Title: A Clean, Minimalist ggplot Theme
+Version: 1.0.0
+Authors@R:
+    person(given = "Joshua C.",
+           family = "Fjelstul",
+           role = c("aut", "cre"),
+           email = "joshfjelstul@gmail.com",
+           comment = c(ORCID = "0000-0002-9494-260X"))
+Description: The clean, minimalist ggplot theme that I use in my papers.
+Date: 2020-08-04
+License: CC0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
