@@ -10,7 +10,7 @@
 #' @param size Numeric. The size of the font to use.
 #'
 #' @export
-JCF_theme <- function(size = 12) {
+theme_minimal <- function(size = 12) {
   theme <- ggplot2::theme_minimal(base_size = size)
   theme <- theme + ggplot2::theme(
     panel.grid.major = element_blank(),
@@ -43,8 +43,8 @@ JCF_theme <- function(size = 12) {
 #' @param main String. The main title for the plot.
 #'
 #' @export
-JCF_titles <- function(x = NULL, y = NULL, main = NULL) {
-  list(xlab(x), ylab(y), ggplot2::ggtitle(main))
+titles_minimal <- function(x = NULL, y = NULL, title = NULL) {
+  list(xlab(x), ylab(y), ggplot2::ggtitle(title))
 }
 
 #' Color Palette
@@ -54,7 +54,7 @@ JCF_titles <- function(x = NULL, y = NULL, main = NULL) {
 #' @param colors Numeric. The number of colors to return.
 #'
 #' @export
-JCF_palette <- function(colors) {
+palette_minimal <- function(colors) {
 	palette <- c("#3498DB", "#E74C3C", "#1ABC9C", "#9B59B6")
 	output <- palette[1:colors]
 	return(output)
