@@ -13,21 +13,21 @@
 theme_minimal <- function(size = 12) {
   theme <- ggplot2::theme_minimal(base_size = size)
   theme <- theme + ggplot2::theme(
-    panel.grid.major = element_blank(),
-    panel.grid.minor = element_blank(),
-    panel.background = element_blank(),
-    axis.line = element_line(size = 0.5, color = "black", lineend = "round"),
-    plot.background = element_rect(fill = "white", color = NA),
-    plot.title = element_text(color = "black", size = size, hjust = 0.5, margin = margin(t = 0, r = 0, b = 18, l = 0)),
-    axis.title.y = element_text(color = "black", margin = margin(t = 0, r = 18, b = 0, l = 0)),
-    axis.title.x = element_text(color = "black", margin = margin(t = 18, r = 0, b = 0, l = 0)),
-    axis.text.x = element_text(color = "black", margin = margin(t = 8, r = 0, b = 0, l = 0)),
-    axis.text.y = element_text(color = "black", margin = margin(t = 0, r = 8, b = 0, l = 0)),
-    strip.background = element_blank(),
-    axis.ticks = element_line(size = 0.5, color = "black", lineend = "round"),
-    axis.ticks.length = unit(6, "pt"),
-    strip.text = element_text(color = "black"),
-    plot.margin = margin(t = 20, r = 20, b = 20, l = 20)
+    panel.grid.major = ggplot2::element_blank(),
+    panel.grid.minor = ggplot2::element_blank(),
+    panel.background = ggplot2::element_blank(),
+    axis.line = ggplot2::element_line(size = 0.5, color = "black", lineend = "round"),
+    plot.background = ggplot2::element_rect(fill = "white", color = NA),
+    plot.title = ggplot2::element_text(color = "black", size = size, hjust = 0.5, margin = ggplot2::margin(t = 0, r = 0, b = 18, l = 0)),
+    axis.title.y = ggplot2::element_text(color = "black", margin = ggplot2::margin(t = 0, r = 18, b = 0, l = 0)),
+    axis.title.x = ggplot2::element_text(color = "black", margin = ggplot2::margin(t = 18, r = 0, b = 0, l = 0)),
+    axis.text.x = ggplot2::element_text(color = "black", margin = ggplot2::margin(t = 8, r = 0, b = 0, l = 0)),
+    axis.text.y = ggplot2::element_text(color = "black", margin = ggplot2::margin(t = 0, r = 8, b = 0, l = 0)),
+    strip.background = ggplot2::element_blank(),
+    axis.ticks = ggplot2::element_line(size = 0.5, color = "black", lineend = "round"),
+    axis.ticks.length = ggplot2::unit(6, "pt"),
+    strip.text = ggplot2::element_text(color = "black"),
+    plot.margin = ggplot2::margin(t = 20, r = 20, b = 20, l = 20)
   )
   return(theme)
 }
@@ -44,7 +44,7 @@ theme_minimal <- function(size = 12) {
 #'
 #' @export
 titles_minimal <- function(x = NULL, y = NULL, title = NULL) {
-  list(xlab(x), ylab(y), ggplot2::ggtitle(title))
+  list(ggplot2::xlab(x), ggplot2::ylab(y), ggplot2::ggtitle(title))
 }
 
 #' Color Palette
